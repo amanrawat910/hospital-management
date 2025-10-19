@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Queue</title>
+  <style>
+    body { font-family: Arial; background-color: #f0f9ff; text-align: center; }
+    nav { background-color: #0077b6; padding: 10px 0; }
+    nav ul { list-style: none; }
+    nav ul li { display: inline; margin: 0 20px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { color: #ffd60a; }
+
+    table {
+      margin: 40px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #0077b6;
+      padding: 10px;
+    }
+    th {
+      background-color: #0077b6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="register.html">📝 Register</a></li>
+      <li><a href="viewQueue.html">📋 View Queue</a></li>
+      <li><a href="update.html">🔄 Update</a></li>
+      <li><a href="resource.html">⚕ Resource</a></li>
+      <li><a href="reports.html">📊 Reports</a></li>
+    </ul>
+  </nav>
+
+  <h2>Priority Queue - Patients by Severity</h2>
+
+  <table>
+    <tr><th>Patient ID</th><th>Name</th><th>Age</th><th>Disease</th><th>Priority Level</th></tr>
+    <tr><td>101</td><td>Ravi</td><td>40</td><td>Heart Pain</td><td>High</td></tr>
+    <tr><td>102</td><td>Priya</td><td>25</td><td>Flu</td><td>Low</td></tr>
+  </table>
+
+</body>
+</html>

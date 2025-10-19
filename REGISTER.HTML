@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Patient</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f9ff;
+      text-align: center;
+    }
+    nav { background-color: #0077b6; padding: 10px 0; }
+    nav ul { list-style: none; margin: 0; padding: 0; }
+    nav ul li { display: inline; margin: 0 20px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { color: #ffd60a; }
+
+    form {
+      margin-top: 40px;
+      background-color: white;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input, button {
+      margin: 8px;
+      padding: 8px;
+      width: 220px;
+    }
+    button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover { background-color: #005f99; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="register.html">📝 Register</a></li>
+      <li><a href="viewQueue.html">📋 View Queue</a></li>
+      <li><a href="update.html">🔄 Update</a></li>
+      <li><a href="resource.html">⚕ Resource</a></li>
+      <li><a href="reports.html">📊 Reports</a></li>
+    </ul>
+  </nav>
+
+  <h2>Register New Patient</h2>
+
+  <form>
+    <input type="text" placeholder="Patient ID" required><br>
+    <input type="text" placeholder="Name" required><br>
+    <input type="number" placeholder="Age" required><br>
+    <input type="text" placeholder="Disease" required><br>
+
+    <!-- Date field -->
+    <input type="date" id="date" required><br>
+
+    <!-- Time field with seconds -->
+    <input type="time" id="time" step="1" required><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+
+    function updateDateTime() {
+      const now = new Date();
+      dateInput.value = now.toISOString().split('T')[0];
+      timeInput.value = now.toTimeString().split(' ')[0];
+    }
+
+    updateDateTime();
+  </script>
+
+</body>
+</html>

@@ -60,3 +60,37 @@ Ensures that staff can quickly access and organize patient information.
 **Searching Algorithms:** Used to find specific patients quickly based on their ID or name.  
 
 **Decision Logic:** Uses conditional statements to determine patient priority and room allocation order.
+
+CODE OUTPUT MENU-
+Emergency Patient Room Prioritization System
+1. Add New Patient
+2. View All Patients
+3. Update Patient Record
+4. Delete Patient Record
+5. Prioritize and Allocate Rooms
+6. Search Patient
+7. Exit
+Enter your choice:
+
+EXAMPLE diseases.txt-
+HeartAttack High
+Stroke High
+Fracture Medium
+Fever Low
+Asthma Medium
+Covid High
+
+Example patients.txt-
+101 AmanRawat 45 HeartAttack 12 10 2025 14 35 00 High Admitted
+102 Riya 26 Fever 12 10 2025 15 00 00 Low Waiting
+103 Mohan 65 Stroke 12 10 2025 14 45 00 High Admitted
+
+EXAMPLE OUTPUT-
+Room Prioritization Result
+Patient ID: 101  Name: Aman Rawat  Disease: Heart Attack  Priority: High  Room: Allocated
+Patient ID: 103  Name: Mohan       Disease: Stroke        Priority: High  Room: Allocated
+Patient ID: 102  Name: Riya        Disease: Fever         Priority: Low   Room: Waiting
+
+Total Rooms Allocated: 2
+Patients Waiting: 1
+
